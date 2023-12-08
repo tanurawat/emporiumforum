@@ -48,10 +48,10 @@ function BidModal({ showBidModal, setShowBidModal, product, reloadData }) {
             <Input />
           </Form.Item>
           <Form.Item label="Message" name="message" rules={rules}>
-            <Input.TextArea />
+            <Input.TextArea maxLength={1000} />
           </Form.Item>
           <Form.Item label="Mobile" name="mobile" rules={rules}>
-            <Input type="number" />
+            <Input type="tel" maxLength={10} />
           </Form.Item>
         </Form>
       </div>

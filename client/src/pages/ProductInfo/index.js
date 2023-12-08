@@ -8,7 +8,7 @@ import {
 import { SetLoader } from "../../redux/loadersSlice";
 import Divider from "../../components/Divider";
 import { useNavigate, useParams } from "react-router-dom";
-import { message, Button } from "antd";
+import { message, Button, Carousel } from "antd";
 import moment from "moment";
 import BidModal from "./BidModal";
 function ProductInfo() {
@@ -47,7 +47,7 @@ function ProductInfo() {
           <div className="flex flex-col gap-3">
             <img
               src={product.images[selectedImageIndex]}
-              className="h-2/4 w-full pl-3 pr-3 rounded-md"
+              className="h-100 w-full pl-3 pr-3 rounded-md"
               alt=""
             />
             <div className="flex gap-5">
@@ -117,8 +117,10 @@ function ProductInfo() {
               <div className="flex justify-between mt-2">
                 <span>Purchased Year</span>
                 <span>
-                  {moment().subtract(product.age, "years").format("YYYY")}(
-                  {product.age} years ago)
+                  {moment().subtract(product.age, "years").format("YYYY")}
+
+                  {/* (
+                  {product.age} years ago) */}
                 </span>
               </div>
             </div>

@@ -56,7 +56,7 @@ function Filters({ showFilters, setShowFilters, filters, setFilters }) {
         ></i>
       </div>
       <div className="flex flex-col gap-1 mt-5">
-        <h1 className="text-gray-600">Categories</h1>
+        <h1 className="text-gray-600">Category of Product</h1>
         <div className="flex flex-col">
           {categories.map((category) => {
             return (
@@ -87,7 +87,7 @@ function Filters({ showFilters, setShowFilters, filters, setFilters }) {
             );
           })}
         </div>
-        <h1 className="text-gray-600 mt-5">Ages</h1>
+        <h1 className="text-gray-600 mt-5">Age of Product</h1>
         <div className="flex flex-col">
           {ages.map((age) => {
             return (

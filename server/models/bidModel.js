@@ -23,6 +23,7 @@ const bidSchema = new mongoose.Schema(
     },
     mobile: {
       type: Number,
+      maxlength: 10,
       required: true,
     },
   },
